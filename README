@@ -1,0 +1,12 @@
+1. Open in VS2012 with admin rights
+2. Open the Properties -> Web page on the Web project (ClientWinAuthAgainstIIS)
+3. Use local IIS Web Server -> Create Virtual Directory
+
+4. Open the IIS Management Console
+5. Navigate to the newly created application
+6. (Security) Authentication -> Enable Windows Authentication, disable all others.
+
+7. Build solution.
+8. Ensure that the Client project is set as the Startup project
+9. Hit F5.
+10. The console output is hopefully "Hello world".

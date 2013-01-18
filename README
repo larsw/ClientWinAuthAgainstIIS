@@ -10,3 +10,6 @@
 8. Ensure that the Client project is set as the Startup project
 9. Hit F5.
 10. The console output is hopefully "Hello world".
+
+PS: Oh yes, to create a full blown web app (ASP.NET MVC 4 with a Web API controller) for displaying "Hello world" 
+is of course a classic example of gold plating :)

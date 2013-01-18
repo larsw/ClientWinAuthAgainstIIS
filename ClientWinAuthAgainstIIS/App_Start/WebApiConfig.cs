@@ -1,7 +1,6 @@
-﻿using System.Web.Http;
-
-namespace ClientWinAuthAgainstIIS
+﻿namespace ClientWinAuthAgainstIIS
 {
+    using System.Web.Http;
     using System.Web.Mvc;
 
     public static class WebApiConfig
@@ -13,6 +12,9 @@ namespace ClientWinAuthAgainstIIS
                 routeTemplate: "{controller}/{id}",
                 defaults: new { controller = "Home", id = UrlParameter.Optional }
             );
+
+            config.Formatters.Clear();
+            config.Formatters.Add(new WebApiContrib.Formatting.PlainTextFormatter());
         }
     }
 }

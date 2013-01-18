@@ -1,7 +1,7 @@
-﻿using System.Web.Http;
-
-namespace ClientWinAuthAgainstIIS.Controllers
+﻿namespace ClientWinAuthAgainstIIS.Controllers
 {
+    using System.Web.Http;
+
     public class HomeController : ApiController
     {
         public string Get()
